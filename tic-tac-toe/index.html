@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    }
+    body{
+        background-color: #35605A;
+        text-align: center;
+        margin-top: 50px;
+    }
+    h1{
+        text-shadow: rgb(122, 131, 139) 2px 1px;
+        font-size: 3.5rem;
+    }
+    .container{
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .game{
+        height: 60vmin;
+        width: 60vmin;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
+    }
+    .box{
+        height: 18vmin;
+        width: 18vmin;
+        border-radius: 5px;
+        font-size: 8vmin;
+        cursor: pointer;
+        background-color: white;
+    }
+    #reset-btn{
+        padding: 1rem;
+        font-size: 1.25rem;
+        background-color: #D5BF86;
+        color: #3F0D12;
+        border-radius: 20px;
+    }
+
+    #msg{
+        color: black;
+        font-size: 2.3rem;
+    }
+    .msg-container{
+        margin-bottom: 5vmin;
+    }
+
+    .hide{
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Tic Tac Toe</h1>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div> 
+
+        <div class="msg-container hide">
+            <h3 id="msg">Winner</h3>
+        </div>
+        <button id="reset-btn">Reset Game</button>
+    </main>
+    <script src="ttt.js"></script>
+</body>
+</html>
